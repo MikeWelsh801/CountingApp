@@ -2,6 +2,20 @@
 
 namespace CountingApp
 {
+    /// <summary>
+    /// This class allows a user to solve counting problems from the command
+    /// line. Arguments are integer, "choose" or "permute", integer.
+    /// 
+    /// First integer is the number of items in a set, and the second integer
+    /// is the number of items being chosen.
+    /// 
+    /// Example: 6 choose 3 will output 20
+    /// Because there are 30 different ways to choose 3 items from a set of 
+    /// 6 (ignoring order). 
+    /// 
+    /// Permute calculates this with order considered.
+    /// 6 permute 3 will output 120
+    /// </summary>
     internal class Counting
     {
         static void Main(string[] args)
@@ -32,6 +46,12 @@ namespace CountingApp
             Console.Read();
         }
 
+        /// <summary>
+        /// Calculates the permutations
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="r"></param>
+        /// <returns></returns>
         private static BigInteger Permute(BigInteger n, BigInteger r)
         {
             return Factorial(n) / Factorial(n - r);
