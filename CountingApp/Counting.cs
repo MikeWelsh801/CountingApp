@@ -43,7 +43,7 @@ namespace CountingApp
                 $"items from a set of {n} items:");
             Console.WriteLine();
             Console.WriteLine("\t\t" + result.ToString());
-            Console.Read();
+            Console.WriteLine("Press any key to exit.");
         }
 
         /// <summary>
