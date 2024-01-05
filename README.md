@@ -7,3 +7,9 @@ Command line arguments are an integer followed by "choose" or "permute" and anot
 choosing conventions. Choose and permute are not case sensitive.
 
 For Example: If the command line arguments are 6 choose 3, the result will be 20.
+
+# Usage Example
+```
+./count.sh 10 choose 5
+```
+Must have dotnet build tools installed.
